@@ -4,7 +4,8 @@ def int_func(s):
 symbols = "abcdefghijklmnopqrstuvwxyz "
 while True:
     x = input('input numbers with spaces:\n')
-    if not all(char in x for char in symbols): #почему не работает??
+#   if not all(char in x for char in symbols): #почему не работает??
+    if [x for x in x if x not in symbols]:
         continue
     x = x.split(' ')
     res = []
@@ -15,3 +16,6 @@ while True:
     new_string = ' '.join(res)
     print(new_string)
     break
+
+
+xxx = [x for x in x if x not in symbols] #лишние буквы ['я', 'ч', 'с'] нет лишних []
