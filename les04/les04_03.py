@@ -1,0 +1,1 @@
+print([itm for itm in range(20, 240) if (not itm % 20) | (not itm % 21)])
